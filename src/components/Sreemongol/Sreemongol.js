@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Redirect } from 'react-router-dom';
+import Navigationbar from '../Navigationbar/Navigationbar';
 import './Sreemongol.css'
+import bgImage from '../../Images/Image/first.png';
 
 const Sreemongol = () => {
+    const [isAuth, setIsAuth] =useState(true);
+    if(!isAuth){
+        return <Redirect to ="/heading"></Redirect>
+    }
+
     return (
-        <div >
+        <div  style={{ backgroundImage: ` linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${bgImage})`}} className="bg-image">
+            <Navigationbar></Navigationbar>
             <div className="place-container">
                 <div className="sreemongol-container">
                     <h1 id = "heading">Sreemongol</h1><br/>
@@ -34,7 +43,9 @@ const Sreemongol = () => {
                             </div>
                         </div>
                         <br/>
-                        <button className="booking-btn" type="submit">Start Booking</button>
+                        <nav>
+                             <button onClick ={() => setIsAuth(false)}className="booking-btn" type="submit">Start Booking</button>      
+                        </nav>
                     </form>  
                 </div>  
             </div>

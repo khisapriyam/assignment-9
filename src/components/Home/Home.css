@@ -3,7 +3,7 @@
     background-size: 100% 100%; 
     background-size: cover;
     background-attachment: fixed;
-    height: 525px;
+    height: 625px;
     
 }
 .bg-image img{
@@ -35,7 +35,7 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-.category img{
+/* .category img{
     border-radius: 25px;
     height: 400px;
 }
@@ -53,10 +53,10 @@
     text-align: center;
     font-size:2rem;
     justify-content: center;
-} 
+}  */
 
 /* slider button starts here */
-a{
+/* a{
     text-decoration: none;
     display: inline-block;
     padding: 8px 16px;
@@ -86,9 +86,9 @@ border-radius: 50%;
   border-radius: 4px;
   font-size: 16px;
   background-color: white;
-  /* background-image: url('download.png'); */
+  background-image: url('download.png');
   background-position: 10px 10px; 
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
-}
+} */
 

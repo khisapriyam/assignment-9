@@ -14,40 +14,32 @@ import Home from '../Home/Home';
 const TouristPlaces = () => {
     
     return (
-        
         <div >
             <div className="cards">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4">
                            <div className= "category">
-                                <nav>
-                                    <a href="/sajek">
-                                        <img src={sajek} />
-                                    </a>
-                                    <h2 className="placeName">Sajek</h2> 
-                                </nav>
+                                <Nav.Link  href="/sajek" >
+                                    <img src={sajek} /> 
+                                    <h2 className="placeName1">Sajek</h2>  
+                                </Nav.Link>
                            </div>
                         </div>
                         <div className="col-md-4">
                             <div className="category">
-                                <nav>
-                                    <a href="/sreemongol">
-                                        <img  src={sree} />
-                                    </a>
+                                <Nav.Link href="/sreemongol">
+                                    <img  src={sree} />
                                     <h2 className = "placeName">Sreemongol </h2>
-                                </nav>
+                                </Nav.Link>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className= "category">
-                                <nav>
-                                    <a href="/sundorbon">
-                                        <img src={sundor}/>
-                                    </a>
+                                <Nav.Link href="/sundorbon">
+                                    <img src={sundor}/>
                                     <h2 className = "placeName">Sundorbon</h2>
-                                </nav>
-                                
+                                </Nav.Link> 
                             </div>
                         </div>  
                     </div>
@@ -58,12 +50,8 @@ const TouristPlaces = () => {
                 <a href="#" className="previous round">&#8249;</a>""
                 <a href="#" className="next round">&#8250;</a>
                 <a href=""></a>
-            </div>
-          
-                
-        </div>
-
-        
+            </div>    
+        </div>  
     );
 };
 

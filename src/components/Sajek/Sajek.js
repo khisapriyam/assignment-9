@@ -3,6 +3,7 @@ import { Redirect } from 'react-router-dom';
 import bgImage from '../../Images/Image/first.png';
 import Heading from '../Heading/Heading';
 import Login from '../Login/Login';
+import Navigationbar from '../Navigationbar/Navigationbar';
 import './Sajek.css'
 
 const Sajek = () => {
@@ -12,7 +13,9 @@ const Sajek = () => {
     }
    
     return (
-        <div >
+        <div  style={{ backgroundImage: ` linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${bgImage})`}} className="bg-image">
+            <Navigationbar></Navigationbar>
+            
             <div className="place-container">
                 <div className="sajek-container">
                     <h1 id = "heading">Sajek</h1><br/>
@@ -49,6 +52,7 @@ const Sajek = () => {
                     </form>  
                 </div>  
             </div>
+            
         </div>
     );
 };

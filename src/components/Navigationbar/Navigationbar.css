@@ -1,0 +1,36 @@
+#heading1{
+    color:white;
+    margin-left: 30px;
+    margin-right: 20px; 
+    cursor: pointer;  
+}
+#heading2{
+    color: white;
+    margin-right: 20px;
+    cursor: pointer; 
+}
+#heading3{
+    color:white;
+    margin-right: 20px; 
+    cursor: pointer; 
+}
+#heading4{
+    color: white;
+    margin-right: 20px; 
+    cursor: pointer;  
+}
+nav img{
+    height: 60px;
+    margin-left: 200px;
+}
+.navigation{
+    background-color:lightblue;
+    opacity: 0.8;
+}
+#searchBtn{
+    margin-left: 50px;
+}
+Nav.Link  a{
+    padding: 0;
+     
+}

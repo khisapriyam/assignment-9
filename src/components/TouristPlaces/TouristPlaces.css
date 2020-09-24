@@ -1,66 +1,35 @@
 
-.bg-image{
-    background-position: center center;
-    background-size: 100% 100%; 
-    background-size: cover;
-    background-attachment: fixed;
-    height: 625px;
-}
-.bg-image .logo{
-    height: 30px;
-    color: white;
-    background-color:white;
-}
-#heading1{
-    color: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    
-}
-#heading2{
-    color: white;
-    margin-right: 20px;
-}
-#heading3{
-    color: white;
-    margin-right: 20px;
-   
-}
-#heading4{
-    color: white;
-    margin-right: 20px;
-    
-}
-.nav{
-    padding-top: 20px;
-    margin-left: 250px; 
-}
-#login-btn{
-    padding-left: 15px;
-    padding-right: 15px;
-}
 .category img{
     border-radius: 25px;
     height: 340px;
+    margin-left: 42px; 
+    padding: 0;  
+} 
+.category img:hover{
+    border: 5px solid yellow;  
 }
-
-/* .category img:hover{
-    border: 5px solid yellow;
-} */
-/* .category{
+.category{
     position: relative;
-} */
+}
 .category .placeName{
-    /* position: absolute; */
+    position: absolute;
     top: 70%;
     width: 70%;
-    font-size:2rem;
+    font-size:1.5rem;
     color: white;
+    margin-left: 90px;
+}
+.category .placeName1{
+    position: absolute;
+    top: 70%;
+    width: 70%;
+    font-size:1.5rem;
+    color: white;
+    margin-left: 120px;
 }
 
 .cards{
-    margin-top:35px;
-    
+    margin-top:35px;  
 }
 
 /* slider button starts here */
@@ -84,3 +53,14 @@ a {
   .round {
     border-radius: 50%;
   }
+  .button{
+      text-align: center;
+  }
+  a:hover:not(.active) {
+    background-color:transparent;
+  }
+  /* .container{
+    border-radius:30px;
+  } */
+  
+ 

@@ -41,7 +41,7 @@ function App() {
         <NavLink activeClassName="active" to="/sajek"> Sajek</NavLink>
         <NavLink activeClassName="active" to="/dashboard"> Dashboard</NavLink>
         <NavLink activeClassName="active" to="/login"> Login</NavLink> */}
-        <hr/>
+      
         <Switch>
           <Route path="/home">
             <Home></Home>
@@ -70,9 +70,6 @@ function App() {
           <Route path="/existinguser">
             <ExistingUser></ExistingUser>
           </Route>
-          
-          {/* <Route path="/about/:id" component = {About}/>
-          <Route path="/contact" component = {Contact}/> */}
           <Route path="*">
             <NoMatch />
           </Route>

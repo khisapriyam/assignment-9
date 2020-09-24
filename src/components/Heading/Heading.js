@@ -9,6 +9,7 @@ import TouristPlaces from '../TouristPlaces/TouristPlaces';
 import ClickToExplore from '../ClickToExplore/ClickToExplore';
 import './Heading.css'
 import { Redirect } from 'react-router-dom';
+import Navigationbar from '../Navigationbar/Navigationbar';
 
 
 const Heading = () => {
@@ -19,33 +20,13 @@ const Heading = () => {
     
     return (
         <div>
-            <nav className="nav">
-               <Navbar bg="" expand="lg">
-                   <Navbar.Brand href="#home">
-                       <img src={logo}/>
-                   </Navbar.Brand>
-                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                   <Navbar.Collapse id="basic-navbar-nav">
-                       <Form inline>
-                           
-                       </Form>
-                       <Nav className="mr-auto " >
-                           <Nav.Link id="heading1" href="/news">News</Nav.Link>
-                           <Nav.Link id="heading2"  href="#destination">Destination</Nav.Link>
-                           <Nav.Link id="heading3"  href="#blog">Blog</Nav.Link>
-                           <Nav.Link id="heading4"  href="#contact">Contact</Nav.Link>
-                       </Nav>
-                       <Button variant="warning" id="login-btn">Log In</Button>{' '}
-                   </Navbar.Collapse>
-               </Navbar>
-           </nav>
+            <Navigationbar></Navigationbar>
             <div>
                 <form className="form">
                     <div className="container">
                         <h3>Create an account</h3>
                         <hr/>
                         <label for="first-name"><b>First Name</b></label>
-                        {/* <hr style ={hrStyle}/> */}
                         <input type="text" placeholder="Enter First Name" name="first-name" id="first-name" required></input>
                         <label for="last-name"><b>Last Name</b></label>
                         <input type="text" placeholder="Enter Last Name" name="last-name" id="last-name" required></input>
