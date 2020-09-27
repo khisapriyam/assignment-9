@@ -21,8 +21,9 @@ const Navigationbar = () => {
                            <Nav id="heading2"  href="#destination">Destination</Nav>
                            <Nav id="heading3"  href="#blog">Blog</Nav>
                            <Nav id="heading4"  href="#contact">Contact</Nav>
+                           <Nav><Button variant="warning" id="login-btn" href="/login">LogIn</Button></Nav>
                        </Nav>
-                       <Button variant="warning" id="login-btn">LogIn</Button>
+                       {/* <Button variant="warning" id="login-btn">LogIn</Button> */}
                    </Navbar.Collapse>
                </Navbar>
            </nav>
