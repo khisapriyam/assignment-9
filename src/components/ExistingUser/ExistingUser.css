@@ -1,4 +1,4 @@
-#heading1{
+/* #heading1{
     color:black;
     margin-left: 200px;
     margin-right: 20px; 
@@ -24,7 +24,7 @@ nav img{
     margin-left: 200px;
 }
 
-/* existinguser log in from starts here */
+
 .form-container{
     padding: 10px;
     border: 1px solid lightgray;
@@ -63,4 +63,4 @@ nav img{
   }
   #boxColor2{
     background: #f1f1f1; 
-  }
+  } */

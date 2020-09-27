@@ -1,0 +1,183 @@
+#heading1{
+    color: black;
+    margin-left: 150px;
+    margin-right: 40px;   
+}
+#heading2{
+    color:black;
+    margin-right: 40px;
+}
+#heading3{
+    color:black;
+    margin-right: 40px; 
+}
+#heading4{
+    color: black;
+    margin-right: 40px;  
+}
+nav img{
+    height: 60px;
+}
+#login-btn{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* registration form starts here */
+/* * {box-sizing: border-box} */
+
+/* Add padding to containers */
+.container {
+  padding: 10px;
+  /* box-sizing: border-box; */
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+.form{
+  max-width: 30%;
+  margin-left: 420px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+#or {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid lightgray; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+ 
+ #or span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+    background-color: #3B5998;
+    color: white;
+  }
+  
+  .google {
+    background-color: #dd4b39;
+    color: white;
+  }
+  .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; /* remove underline from anchors */
+  }
+
+/* existinguser log in from starts here */
+.form-container{
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    max-width: 30%;
+    margin-left: 460px;
+}
+#or1 {
+    width: 30%; 
+    text-align: center; 
+    border-bottom: 1px solid lightgray; 
+    line-height: 0.1em;
+    margin-left: 460px;
+    margin-top: 15px; 
+ } 
+ #or1 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+ .fb{
+    background-color: #3B5998;
+    color: white;
+  }
+  .google{
+    background-color: #dd4b39;
+    color: white;
+  }
+  .checkBox{
+      margin-top:-32px;
+  }
+  #createAccount{
+      margin-left: 30px;
+  }
+  #boxColor{
+    background: #f1f1f1; 
+  }
+  #boxColor2{
+    background: #f1f1f1; 
+  }
+.col .googleButton{
+  margin-left:480px;
+  border-radius: 5px;
+  color: white;
+  background-color: blue; 
+}
+.col .fbButton{
+  margin-left:30px;
+  border-radius: 5px;
+  color: white;
+  background-color:red;
+}
+.alert p{
+  text-align: center;
+}
+#create-account{
+  margin-left: 18px;
+}
+#rememberMe {
+  margin-top:10px;
+}

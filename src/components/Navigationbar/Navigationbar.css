@@ -28,7 +28,9 @@ nav img{
     opacity: 0.8;
 }
 #searchBtn{
+    margin-top: 19px; 
     margin-left: 50px;
+    padding-right: 100px;
 }
 Nav.Link  a{
     padding: 0;

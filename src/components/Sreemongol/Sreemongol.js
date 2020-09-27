@@ -7,7 +7,7 @@ import bgImage from '../../Images/Image/first.png';
 const Sreemongol = () => {
     const [isAuth, setIsAuth] =useState(true);
     if(!isAuth){
-        return <Redirect to ="/heading"></Redirect>
+        return <Redirect to ="/login"></Redirect>
     }
 
     return (
@@ -24,21 +24,21 @@ const Sreemongol = () => {
                     <form className="container">
                         <div className="input-field">
                             <label>Origin</label><br/>
-                            <input type="text" placeholder=""/>
+                            <input type="text" placeholder="Dhaka"/>
                         </div>
                         <div className="input-field">
                             <label>Destination</label><br/>
-                            <input type="text" placeholder=""/>
+                            <input type="text" placeholder="Sreemongol"/>
                         </div>
                         <div className="container">
                             <div className="row">
                                 <div className="col-md-6">
                                     <label for="birthday">From:</label><br/>
-                                        <input type="date" id="birthday" name="birthday"></input>
+                                        <input type="date" ></input>
                                 </div>
                                 <div className= "col-md-6">
                                     <label for="birthday">To:</label><br/>
-                                        <input type="date" id="birthday" name="birthday"></input>
+                                        <input type="date" ></input>
                                 </div>
                             </div>
                         </div>

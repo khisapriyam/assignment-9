@@ -1,0 +1,33 @@
+#heading5{
+    color:black;
+    margin-left: 300px;
+    margin-right: 50px; 
+    cursor: pointer;  
+}
+#heading6{
+    color:black;
+    margin-right: 50px;
+    cursor: pointer; 
+}
+#heading6{
+    color:black;
+    margin-right: 50px; 
+    cursor: pointer; 
+}
+#heading8{
+    color: black;
+    margin-right: 50px; 
+    cursor: pointer;  
+}
+nav img{
+    height: 60px;
+    margin-left: 200px;
+}
+
+#searchBtn{
+    margin-left: 50px;
+}
+Nav.Link  a{
+    padding: 0;
+     
+}

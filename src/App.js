@@ -17,8 +17,8 @@ import Heading from './components/Heading/Heading';
 import NoMatch from './components/NoMatch/NoMatch'
 import DashBoard from './components/Dashboard/DashBoard';
 import ExistingUser from './components/ExistingUser/ExistingUser';
-
-
+import SearchPlace from './components/SearchPlace/SearchPlace';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 //creating context api
 export const UserContext = createContext();
@@ -27,54 +27,38 @@ function App() {
   const [loggedInUser, setLoggedInUser] = useState({})
   return (
     <div>
-      {/* <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
-      <p>name: {loggedInUser.name}</p>
-      <Home></Home>
-      <Heading></Heading>
-
-      </UserContext.Provider> */}
-      <Router>
-        {/* <NavLink exact activeClassName="active" to="/"> Home</NavLink>
-        <NavLink exact activeClassName="active" to="/about"> About</NavLink>
-        <NavLink activeClassName="active" to="/sreemongol"> Sreemongol</NavLink>
-        <NavLink activeClassName="active" to="/sundorbon"> Sundorbon</NavLink>
-        <NavLink activeClassName="active" to="/sajek"> Sajek</NavLink>
-        <NavLink activeClassName="active" to="/dashboard"> Dashboard</NavLink>
-        <NavLink activeClassName="active" to="/login"> Login</NavLink> */}
-      
-        <Switch>
-          <Route path="/home">
-            <Home></Home>
-          </Route>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route path="/sajek">
-            <Sajek></Sajek>
-          </Route>
-          <Route path="/sreemongol">
-            <Sreemongol></Sreemongol>
-          </Route>
-          <Route path="/sundorbon">
-            <Sundorbon></Sundorbon>
-          </Route>
-          <Route path="/dashboard">
-            <DashBoard></DashBoard>
-          </Route>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route path="/heading">
-            <Heading></Heading>
-          </Route>
-          <Route path="/existinguser">
-            <ExistingUser></ExistingUser>
-          </Route>
-          <Route path="*">
-            <NoMatch />
-          </Route>
-        </Switch>
-      </Router>
+      {/* <ClickToExplore></ClickToExplore> */}
+      <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+      <p>Email: {loggedInUser.email}</p>
+        <Router>
+          <Switch>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route path="/sajek">
+              <Sajek></Sajek>
+            </Route>
+            <Route path="/sreemongol">
+              <Sreemongol></Sreemongol>
+            </Route>
+            <Route path="/sundorbon">
+              <Sundorbon></Sundorbon>
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <PrivateRoute path="/searchPlace">
+              <SearchPlace></SearchPlace>
+            </PrivateRoute>
+            <Route path="*">
+              <NoMatch />
+            </Route>
+          </Switch>
+        </Router>
+      </UserContext.Provider> 
     </div>
   );
 }

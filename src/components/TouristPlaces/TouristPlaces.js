@@ -1,15 +1,11 @@
 import React from 'react';
-import { Card, CardDeck } from 'react-bootstrap';
 import './TouristPlaces.css'
-
-import bgImage from '../../Images/Image/first.png';
 import {Navbar, Nav,NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
-import { Link, Router } from 'react-router-dom';
-import logo from '../../Images/Logo.png'
 import sajek from '../../Images/Image/Sajek.png'
 import sree from '../../Images/Image/Sreemongol.png'
 import sundor from '../../Images/Image/sundorbon.png'
-import Home from '../Home/Home';
+import { Link } from 'react-router-dom';
+
 
 const TouristPlaces = () => {
     
@@ -20,26 +16,26 @@ const TouristPlaces = () => {
                     <div className="row">
                         <div className="col-md-4">
                            <div className= "category">
-                                <Nav.Link  href="/sajek" >
+                                <Link to="/sajek" > 
                                     <img src={sajek} /> 
                                     <h2 className="placeName1">Sajek</h2>  
-                                </Nav.Link>
+                                </Link>
                            </div>
                         </div>
                         <div className="col-md-4">
                             <div className="category">
-                                <Nav.Link href="/sreemongol">
-                                    <img  src={sree} />
+                                <Link to="/sreemongol">
+                                    <img src={sree} />
                                     <h2 className = "placeName">Sreemongol </h2>
-                                </Nav.Link>
+                                </Link>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className= "category">
-                                <Nav.Link href="/sundorbon">
+                                <Link to="/sundorbon">
                                     <img src={sundor}/>
                                     <h2 className = "placeName">Sundorbon</h2>
-                                </Nav.Link> 
+                                </Link> 
                             </div>
                         </div>  
                     </div>

@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import bgImage from '../../Images/Image/first.png';
-import Heading from '../Heading/Heading';
-import Login from '../Login/Login';
 import Navigationbar from '../Navigationbar/Navigationbar';
 import './Sajek.css'
 
 const Sajek = () => {
     const [isAuth, setIsAuth] =useState(true);
     if(!isAuth){
-        return <Redirect to ="/heading"></Redirect>
+        return <Redirect to ="/login"></Redirect>
     }
-   
+    
     return (
         <div  style={{ backgroundImage: ` linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${bgImage})`}} className="bg-image">
             <Navigationbar></Navigationbar>
@@ -27,11 +25,11 @@ const Sajek = () => {
                     <form className="container">
                         <div className="input-field">
                             <label>Origin</label><br/>
-                            <input type="text" placeholder=" "/>
+                            <input type="text" placeholder="Dhaka"/>
                         </div>
                         <div className="input-field">
                             <label>Destination</label><br/>
-                            <input type="text" placeholder=" "/>
+                            <input type="text" placeholder="Sajek"/>
                         </div>
                         <div className="container">
                             <div className="row">

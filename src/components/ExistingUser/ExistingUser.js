@@ -1,9 +1,56 @@
-import React from 'react';
-import {Navbar, Nav,NavDropdown, Form, FormControl, Button, CardDeck, Card} from 'react-bootstrap'
+import React, { useState } from 'react';
+import {Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap'
 import logo from '../../Images/Logo.png'
 import './ExistingUser.css'
+import * as firebase from "firebase/app";
+import "firebase/auth";
+import firebaseConfig from '../Login/firebase.config';
+
 
 const ExistingUser = () => {
+    if(firebase.apps.length === 0){
+        firebase.initializeApp(firebaseConfig);
+    }
+    const [user, setUser] = useState({
+        isSignedIn: false,
+        name: '',
+        email: '',
+        password: ''
+    })
+
+    const handleBlur = (e) => {
+        let isFieldValid = true;
+        if(e.target.name === 'email'){
+            isFieldValid = /\S+@\S+\.\S+/.test(e.target.value);
+        }
+        if(e.target.name === 'password'){
+            const isPasswordValid = e.target.value.length > 6;
+            const passwordHasNumber = /\d{1}/.test(e.target.value);
+            isFieldValid = isPasswordValid && passwordHasNumber;
+        }
+        if(isFieldValid){
+            const newUserInfo = {...user};
+            newUserInfo[e.target.name] = e.target.value;
+            setUser(newUserInfo);
+        }
+
+    }
+    const handleSubmit = (e) => {
+        console.log(user.email, user.password)
+        if(user.email && user.password){
+            firebase.auth().createUserWithEmailAndPassword(user.email, user.password).catch(function(error) {
+                // Handle Errors here.
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                console.log(errorCode, errorMessage)
+                // ...
+              });
+
+        }
+        e.preventDefault();
+
+    }
+    
     return (
         <div>
              <nav className="nav">
@@ -26,16 +73,16 @@ const ExistingUser = () => {
                </Navbar>
            </nav>
            <div className="form-container">
-            <Form>
+            <Form onSubmit ={handleSubmit}>
                 <Form.Group controlId="formBasicEmail">
                     <h4>Login</h4>
                     <Form.Label>Username or Email</Form.Label>
-                    <Form.Control id="boxColor"type="email" placeholder="Enter username or email" />
+                    <Form.Control id="boxColor" onBlur={handleBlur} type="email" placeholder="Enter username or email" required />
                 </Form.Group>
 
                 <Form.Group controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control id="boxColor2" type="password" placeholder="Password" />
+                    <Form.Control id="boxColor2" onBlur={handleBlur} type="password" placeholder="Password" required />
                 </Form.Group>
                 <div className="checkBox">
                     <div className="row">
@@ -49,6 +96,7 @@ const ExistingUser = () => {
                         </div>
                     </div>
                 </div>
+                
             
                 <Button variant="primary" type="submit">
                     Login
@@ -65,6 +113,10 @@ const ExistingUser = () => {
                 <i class="fa fa-google fa-fw"></i> Login with Google
                 </a>
             </div>
+            {/* <p>Email: {user.email}</p>
+            <p>Password: {user.password}</p>
+            <p>Name: {user.name}</p> */}
+
         </div>
     );
 };
