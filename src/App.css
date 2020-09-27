@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+#userNamePosition{
+  position: relative;
+}
+#userName {
+  text-align: center;
+  position: absolute;
+  left: 870px;
+  top: 27px;
+  z-index: -1;
+}

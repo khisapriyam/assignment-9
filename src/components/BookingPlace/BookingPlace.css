@@ -1,0 +1,19 @@
+.booking-container{
+    display: flex;
+    margin-top: 5px;
+}
+.place-container{
+    /* width: 70%; */
+    border-right: 1px solid lightgrey;
+  
+}
+.map-container{
+    margin-left: 20px;
+    
+}
+.map-container img{
+    width:370px;
+    height:100%;
+    border-radius: 5px;
+
+}

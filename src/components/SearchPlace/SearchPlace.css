@@ -1,6 +1,6 @@
 #heading5{
     color:black;
-    margin-left: 300px;
+    margin-left: 100px;
     margin-right: 50px; 
     cursor: pointer;  
 }
@@ -9,14 +9,14 @@
     margin-right: 50px;
     cursor: pointer; 
 }
-#heading6{
+#heading7{
     color:black;
     margin-right: 50px; 
     cursor: pointer; 
 }
 #heading8{
     color: black;
-    margin-right: 50px; 
+    margin-right: 20px; 
     cursor: pointer;  
 }
 nav img{
@@ -28,6 +28,8 @@ nav img{
     margin-left: 50px;
 }
 Nav.Link  a{
-    padding: 0;
-     
+    padding: 0;   
+}
+#logout-btn{
+    margin-left: 350px;
 }

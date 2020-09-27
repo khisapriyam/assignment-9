@@ -7,18 +7,14 @@ import {
   Route,
   Link, NavLink
 } from "react-router-dom";
-import TouristPlaces from './components/TouristPlaces/TouristPlaces';
 import Sajek from './components/Sajek/Sajek';
 import Sreemongol from './components/Sreemongol/Sreemongol';
 import Sundorbon from './components/Sundorbon/Sundorbon';
-import ClickToExplore from './components/ClickToExplore/ClickToExplore';
 import Login from './components/Login/Login';
-import Heading from './components/Heading/Heading';
 import NoMatch from './components/NoMatch/NoMatch'
-import DashBoard from './components/Dashboard/DashBoard';
-import ExistingUser from './components/ExistingUser/ExistingUser';
 import SearchPlace from './components/SearchPlace/SearchPlace';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+
 
 //creating context api
 export const UserContext = createContext();
@@ -27,9 +23,8 @@ function App() {
   const [loggedInUser, setLoggedInUser] = useState({})
   return (
     <div>
-      {/* <ClickToExplore></ClickToExplore> */}
-      <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
-      <p>Email: {loggedInUser.email}</p>
+      <UserContext.Provider id= "test"value={[loggedInUser, setLoggedInUser]}>
+        <p id="userName">User Name: {loggedInUser.email}</p>
         <Router>
           <Switch>
             <Route path="/home">
@@ -59,6 +54,7 @@ function App() {
           </Switch>
         </Router>
       </UserContext.Provider> 
+      
     </div>
   );
 }

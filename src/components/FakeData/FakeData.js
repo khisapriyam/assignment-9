@@ -1,27 +1,37 @@
 import React from 'react';
-import sajek from '../../Images/Image/Sajek.png'
-import sree from '../../Images/Image/Sreemongol.png'
-import sundor from '../../Images/Image/sundorbon.png'
+import room1 from '../../Images/Image/room-1.png'
+import room2 from '../../Images/Image/room-2.png'
+import room3 from '../../Images/Image/room-3.png'
 
 
-export const place = [
+const place = [
         {
-            title: "Sajek",
-            description:"Hill Station",
-            image: sajek
+            title: "Light bright airy stylish apt",
+            description:"1 guest 2 bedrooms 2 beds 2 baths",
+            wifi:"Wifi air conditioning kitchen",
+            cancellation:"Cancellation flexibility available",
+            price:"4.9(20) $34/night",
+            image: room1
         },
         {
-            title: "Sreemongol",
-            description: "Tea State",
-            image: sree
+            title: "Apatment in Lost Panorama",
+            description:"4 guest 2 bedrooms 2 beds 2 baths",
+            wifi:"Wifi air conditioning kitchen",
+            cancellation:"Cancellation flexibility available",
+            price:"4.8(10) $50/night",
+            image: room2
         },
         {
-            title: "Sundorbon",
-            description: "Forest",
-            image: sundor
+            title: "AR Lounge & Pool(r&r + b&b)",
+            description:"1 guest 2 bedrooms 2 beds 2 baths",
+            wifi:"Wifi air conditioning kitchen",
+            cancellation:"Cancellation flexibility available",
+            price:"4.9(13) $34/per night",
+            image: room3
         }
-            
+        
     ]
+export default place;
    
 
 

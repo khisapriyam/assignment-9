@@ -40,13 +40,7 @@ const TouristPlaces = () => {
                         </div>  
                     </div>
                 </div>
-            </div><br/>
-            <div className="button">
-                {/* slider button starts here */}
-                <a href="#" className="previous round">&#8249;</a>""
-                <a href="#" className="next round">&#8250;</a>
-                <a href=""></a>
-            </div>    
+            </div>
         </div>  
     );
 };

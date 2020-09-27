@@ -23,9 +23,6 @@ nav img{
     padding-right: 15px;
 }
 
-/* registration form starts here */
-/* * {box-sizing: border-box} */
-
 /* Add padding to containers */
 .container {
   padding: 10px;
@@ -161,16 +158,20 @@ a {
     background: #f1f1f1; 
   }
 .col .googleButton{
-  margin-left:480px;
+  margin-left:460px;
   border-radius: 5px;
-  color: white;
-  background-color: blue; 
+  color: black;
 }
 .col .fbButton{
   margin-left:30px;
   border-radius: 5px;
-  color: white;
-  background-color:red;
+  color: black;
+}
+.col .fbButton img{
+  width: 20px;
+}
+.col .googleButton img{
+  width: 20px;
 }
 .alert p{
   text-align: center;
@@ -179,5 +180,5 @@ a {
   margin-left: 18px;
 }
 #rememberMe {
-  margin-top:10px;
+  margin-top:9px;
 }

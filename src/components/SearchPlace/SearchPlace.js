@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {Navbar, Nav,NavDropdown, Form, FormControl, Button, CardDeck, Card} from 'react-bootstrap'
+import { UserContext } from '../../App';
 import logo from '../../Images/Logo.png'
+import BookingPlace from '../BookingPlace/BookingPlace';
 import './SearchPlace.css'
 
 const SearchPlace = () => {
+    //working on sign out button
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     return (
         <div className="searchPlace">
              <nav className="nav">
@@ -22,11 +26,14 @@ const SearchPlace = () => {
                            <Nav id="heading7"  href="#blog">Blog</Nav>
                            <Nav id="heading8"  href="#contact">Contact</Nav>
                        </Nav>
-                       <Button variant="warning" id="login-btn">LogIn</Button>
+                       <Button variant="warning" id="logout-btn" onClick={() =>setLoggedInUser({})}> 
+                            Sign out
+                      </Button>
                    </Navbar.Collapse>
                </Navbar>
            </nav>
            <hr/>
+           <BookingPlace></BookingPlace>
         </div>
     );
 };
