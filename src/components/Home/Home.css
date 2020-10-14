@@ -28,67 +28,10 @@
     color: white;
     margin-right: 20px;  
 }
-/* nav img{
-    height: 60px;
-} */
+
 #login-btn{
     padding-left: 15px;
     padding-right: 15px;
 }
-/* .category img{
-    border-radius: 25px;
-    height: 400px;
-}
-.category img:hover{
-    border: 5px solid yellow;
-}
 
-.category{
-    position: relative;
-}
-.category .placeName{
-    position: absolute;
-    top: 70%;
-    width: 100%;
-    text-align: center;
-    font-size:2rem;
-    justify-content: center;
-}  */
-
-/* slider button starts here */
-/* a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
-}
-a:hover {
-background-color: #ddd;
-color: black;
-}
-.previous {
-background-color: #f1f1f1;
-color: black;
-}
-.next {
-background-color: #f1f1f1;
-color:black;
-}
-.round {
-border-radius: 50%;
-}
-.button{
-    margin-left: 585px;
-} 
-#searchBtn{
-    width: 100%;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url('download.png');
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-} */
 

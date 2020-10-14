@@ -11,21 +11,39 @@
 .category{
     position: relative;
 }
-.category .placeName{
-    position: absolute;
-    top: 70%;
-    width: 70%;
-    font-size:1.5rem;
-    color: white;
-    margin-left: 90px;
-}
 .category .placeName1{
+  position: absolute;
+  top: 70%;
+  width: 70%;
+  font-size:20px;
+  color: white;
+  margin-left: 86px;
+}
+.category .placeName2{
     position: absolute;
     top: 70%;
     width: 70%;
-    font-size:1.5rem;
+    font-size:20px;
     color: white;
-    margin-left: 120px;
+    margin-left: 79px;
+}
+
+.category .placeName3{
+  position: absolute;
+  top: 70%;
+  width: 70%;
+  font-size:20px;
+  color: white;
+  margin-left: 79px;
+}
+.placeName1 span{
+  margin-left:39px;
+}
+.placeName2 span{
+  margin-left:12px;
+}
+.placeName3 span{
+  margin-left:12px;
 }
 
 .cards{
@@ -59,8 +77,5 @@ a {
   a:hover:not(.active) {
     background-color:transparent;
   }
-  /* .container{
-    border-radius:30px;
-  } */
   
  

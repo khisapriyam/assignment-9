@@ -1,6 +1,5 @@
 import React from 'react';
 import './TouristPlaces.css'
-import {Navbar, Nav,NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
 import sajek from '../../Images/Image/Sajek.png'
 import sree from '../../Images/Image/Sreemongol.png'
 import sundor from '../../Images/Image/sundorbon.png'
@@ -18,7 +17,7 @@ const TouristPlaces = () => {
                            <div className= "category">
                                 <Link to="/sajek" > 
                                     <img src={sajek} /> 
-                                    <h2 className="placeName1">Sajek</h2>  
+                                    <h2 className="placeName1">Click to explore <br/><span>Sajek</span></h2>  
                                 </Link>
                            </div>
                         </div>
@@ -26,7 +25,7 @@ const TouristPlaces = () => {
                             <div className="category">
                                 <Link to="/sreemongol">
                                     <img src={sree} />
-                                    <h2 className = "placeName">Sreemongol </h2>
+                                    <h2 className = "placeName2"> Click to explore <span>Sreemongol</span></h2>
                                 </Link>
                             </div>
                         </div>
@@ -34,7 +33,7 @@ const TouristPlaces = () => {
                             <div className= "category">
                                 <Link to="/sundorbon">
                                     <img src={sundor}/>
-                                    <h2 className = "placeName">Sundorbon</h2>
+                                    <h2 className = "placeName3">Click to explore <span>Sundorbon</span></h2>
                                 </Link> 
                             </div>
                         </div>  
