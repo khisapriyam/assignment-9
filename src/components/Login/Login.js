@@ -223,33 +223,7 @@ const Login = () => {
                         <input type="text" onBlur={handleBlur} name="email" id=""required placeholder="Email"/>
                     <label for="psw">Password</label>
                         <input type="password" onBlur={handleBlur} name="password" id=""required  placeholder ="Password"/>
-                    {/* <label>Password</label>
-                        <input
-                            name="password"
-                            type="password"
-                            ref={register({
-                            required: "You must specify a password",
-                            minLength: {
-                                value: 8,
-                                message: "Password must have at least 8 characters"
-                            }
-                            })}
-                        />
-                        {errors.password && <p>{errors.password.message}</p>}
-                        {newUser && <label>Repeat password</label>}
-                            {newUser && <input
-                                name="password_repeat"
-                                type="password"
-                                ref={register({
-                                validate: value =>
-                                    value === password.current || "The passwords do not match"
-                                })}
-                            />}
-                            {errors.password_repeat && <p>{errors.password_repeat.message}</p>}
-                            <input type="submit" onClick={handleSubmit(onSubmit)} /> */}
-
-                        {/* {newUser && <label for="psw-repeat">Confirm Password</label>}
-                            {newUser && <input type="password" onBlur={handleBlur} name="rewritePassword" id=""required  placeholder ="Rewrite Password"/> } */}
+                    
                 </Form.Group>
             
                 <div className="checkBox">
@@ -274,12 +248,12 @@ const Login = () => {
            </div>
             <p id="or1"><span>Or</span></p>
             <div class="col">
-                <button onClick ={handleFbSignIn} class="googleButton" >
+                {/* <button onClick ={handleFbSignIn} class="googleButton" >
                     <img src={fbLogo} alt=""/>
                      Login with Facebook</button>
                     { 
                         loggedInUser.isSignedIn && <Redirect to="/searchPlace"></Redirect>  
-                    }
+                    } */}
                 <button onClick={handleGoogleSignIn} class="fbButton">
                     <img src={googleLogo} alt=""/>
                     Login with Google</button>
